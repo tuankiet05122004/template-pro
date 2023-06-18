@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Togi</title>
+
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="57x57" href="../favicon" />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="../favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="../favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="../favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="../favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="../favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="../favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="../favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="../favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="../favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="../favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="../favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="../favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="../favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="../favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- css -->
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/responsive.css" />
+    </head>
+    <body>
+        <!-- header on mobile -->
+        <header class="header__mobile-nav">
+            <img src="../img/logo.png" alt="logo" class="header__mobile-logo" />
+            <label for="menu-checkbox" class="toggle-menu">
+                <img
+                    src="../img/menu.png"
+                    alt="menu"
+                    class="header__mobile-list"
+                />
+            </label>
+            <a href="#!" class="header__mobile-btn btn">Get Started</a>
+        </header>
+        <div class="header__mobile">
+            <input
+                type="checkbox"
+                id="menu-checkbox"
+                name=""
+                hidden
+                class="menu-checkbox"
+            />
+            <!-- overlay -->
+            <label for="menu-checkbox" class="menu-overlay"></label>
+            <!-- menu contetnt -->
+            <div class="menu-drawer">
+                <img src="../img/logo.png" alt="" class="logo" />
+                <li class="header__item">
+                    <a href="#!" class="header__item-link">Products</a>
+                    <svg
+                        class="header__down"
+                        width="10"
+                        height="6"
+                        viewBox="0 0 10 6"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M9.2 0.900002L5 5.1L0.8 0.900002"
+                            stroke="currentColor"
+                            stroke-width="1.25"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+                </li>
+                <li class="header__item">
+                    <a href="#!" class="header__item-link">Pricing</a>
+                </li>
+                <li class="header__item">
+                    <a href="#!" class="header__item-link">Company</a>
+                    <svg
+                        class="header__down"
+                        width="10"
+                        height="6"
+                        viewBox="0 0 10 6"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M9.2 0.900002L5 5.1L0.8 0.900002"
+                            stroke="currentColor"
+                            stroke-width="1.25"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+                </li>
+                <li class="header__item">
+                    <a href="#!" class="header__item-link">Blog</a>
+                </li>
+            </div>
+        </div>
+        <!-- header on pc -->
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <img
+                        src="../img/logo.png"
+                        alt="Logo"
+                        class="header__logo"
+                    />
+
+                    <nav class="header__nav">
+                        <li class="header__item">
+                            <a href="#!" class="header__item-link">Products</a>
+                            <svg
+                                class="header__down"
+                                width="10"
+                                height="6"
+                                viewBox="0 0 10 6"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M9.2 0.900002L5 5.1L0.8 0.900002"
+                                    stroke="currentColor"
+                                    stroke-width="1.25"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </li>
+                        <li class="header__item">
+                            <a href="#!" class="header__item-link">Pricing</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#!" class="header__item-link">Company</a>
+                            <svg
+                                class="header__down"
+                                width="10"
+                                height="6"
+                                viewBox="0 0 10 6"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M9.2 0.900002L5 5.1L0.8 0.900002"
+                                    stroke="currentColor"
+                                    stroke-width="1.25"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </li>
+                        <li class="header__item">
+                            <a href="#!" class="header__item-link">Blog</a>
+                        </li>
+                    </nav>
+
+                    <div class="header__action">
+                        <a href="#!" class="btn action__btn">Log in</a>
+                        <a href="#!" class="btn action__btn">Get Started</a>
+                    </div>
+                </div>
+
+                <!-- hero -->
+                <div class="hero">
+                    <div class="hero__social">
+                        <div class="hero__social-icon">
+                            <figure>
+                                <svg
+                                    class="social-icon"
+                                    width="10"
+                                    height="10"
+                                    viewBox="0 0 10 10"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M0.5 1.54545C0.5 1.24242 0.601354 0.992418 0.804054 0.795455C1.00675 0.598482 1.27027 0.5 1.59459 0.5C1.91313 0.5 2.17085 0.596964 2.36776 0.790909C2.57046 0.990909 2.67181 1.25151 2.67181 1.57273C2.67181 1.86364 2.57336 2.10605 2.37645 2.3C2.17375 2.5 1.90734 2.6 1.57722 2.6H1.56853C1.25 2.6 0.992281 2.5 0.795367 2.3C0.598453 2.1 0.5 1.84848 0.5 1.54545ZM0.612934 9.5V3.42727H2.54151V9.5H0.612934ZM3.61004 9.5H5.53861V6.10909C5.53861 5.89696 5.56178 5.73333 5.60811 5.61818C5.68919 5.41212 5.81226 5.23787 5.97732 5.09545C6.14237 4.95303 6.34942 4.88182 6.59846 4.88182C7.24711 4.88182 7.57143 5.33939 7.57143 6.25455V9.5H9.5V6.01818C9.5 5.12121 9.2973 4.44091 8.89189 3.97727C8.48648 3.51364 7.95078 3.28182 7.28475 3.28182C6.53764 3.28182 5.9556 3.61818 5.53861 4.29091V4.30909H5.52992L5.53861 4.29091V3.42727H3.61004C3.62162 3.62121 3.62741 4.22424 3.62741 5.23636C3.62741 6.24848 3.62162 7.66969 3.61004 9.5Z"
+                                        fill="currentColor"
+                                    />
+                                </svg>
+                            </figure>
+
+                            <figure>
+                                <svg
+                                    class="social-icon"
+                                    width="6"
+                                    height="14"
+                                    viewBox="0 0 6 14"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M1.32084 7.04951V13.3303C1.32084 13.4151 1.3911 13.5 1.48946 13.5H3.80796C3.89227 13.5 3.97658 13.4293 3.97658 13.3303V6.93634H5.64871C5.73302 6.93634 5.80328 6.86561 5.81733 6.78074L5.95785 4.87106C5.9719 4.77203 5.88759 4.68716 5.78923 4.68716H3.96253V3.32916C3.96253 3.00381 4.21546 2.74918 4.53864 2.74918H5.83138C5.91569 2.74918 6 2.67845 6 2.57943V0.66975C6 0.584875 5.92974 0.5 5.83138 0.5H3.63934C2.36066 0.5 1.32084 1.54679 1.32084 2.83406V4.68716H0.168618C0.0843092 4.68716 0 4.75789 0 4.85691V6.78074C0 6.86561 0.0702577 6.95049 0.168618 6.95049H1.32084V7.04951Z"
+                                        fill="currentColor"
+                                    />
+                                </svg>
+                            </figure>
+
+                            <figure>
+                                <svg
+                                    class="social-icon"
+                                    width="10"
+                                    height="8"
+                                    viewBox="0 0 10 8"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M10 0.947583C9.62383 1.10912 9.226 1.21649 8.81874 1.26637C9.24794 1.01565 9.56882 0.618637 9.72058 0.150555C9.31881 0.385153 8.87926 0.550379 8.42092 0.639088C8.13983 0.343401 7.77488 0.137815 7.37353 0.0490603C6.97217 -0.039694 6.55298 -0.00751064 6.17045 0.141426C5.78792 0.290362 5.45975 0.549161 5.22861 0.884175C4.99747 1.21919 4.87405 1.61492 4.8744 2.01992C4.87282 2.17446 4.88876 2.32869 4.92192 2.47976C4.10634 2.44039 3.30838 2.232 2.58021 1.8682C1.85204 1.5044 1.21006 0.993394 0.696227 0.368581C0.432422 0.812591 0.350671 1.33898 0.467661 1.84032C0.58465 2.34165 0.891559 2.78013 1.32575 3.06626C1.00137 3.05763 0.683851 2.97236 0.399947 2.81764V2.83964C0.400481 3.30574 0.5641 3.75744 0.863263 4.11869C1.16243 4.47994 1.57886 4.72868 2.04248 4.82306C1.86709 4.86857 1.68633 4.89093 1.50495 4.88953C1.37472 4.8918 1.24461 4.88024 1.11689 4.85505C1.24939 5.25563 1.50475 5.60593 1.84781 5.85773C2.19088 6.10953 2.60478 6.25044 3.03255 6.26107C2.30689 6.81979 1.41194 7.1229 0.49072 7.12197C0.326712 7.12303 0.162803 7.11375 0 7.09418C0.937419 7.68891 2.02977 8.00352 3.14495 7.99997C6.91739 7.99997 8.97998 4.92332 8.97998 2.25644C8.97998 2.16717 8.97683 2.0811 8.97246 1.99552C9.37683 1.71061 9.72504 1.35549 10 0.947583Z"
+                                        fill="currentColor"
+                                    />
+                                </svg>
+                            </figure>
+                        </div>
+                        <p class="social-desc">SCROLL DOWN</p>
+                        <img
+                            src="../img/vector-down.png"
+                            alt=""
+                            class="social-vector"
+                        />
+                    </div>
+
+                    <div class="hero__content">
+                        <h1 class="hero__heading">
+                            More than your average popup builder
+                        </h1>
+                        <p class="hero__desc">
+                            Everything you need—forms, sidebars, slide-ins,
+                            gamification—to turn your traffic into revenue.
+                        </p>
+
+                        <a href="#!" class="btn hero__btn"
+                            >Start your free trial</a
+                        >
+                    </div>
+
+                    <div class="hero__media">
+                        <div class="hero__media-inner">
+                            <img
+                                src="../img/hero__media-02.png"
+                                alt=""
+                                class="hero__img"
+                            />
+                            <img
+                                src="../img/hero__media_01.png"
+                                alt=""
+                                class="hero__img"
+                            />
+                            <div class="hero__decor">
+                                <img
+                                    src="../img/decor-01.png"
+                                    alt=""
+                                    class="hero__decor-icon"
+                                />
+                                <img
+                                    src="../img/decor-02.png"
+                                    alt=""
+                                    class="hero__decor-icon"
+                                />
+                                <img
+                                    src="../img/decor-03.png"
+                                    alt=""
+                                    class="hero__decor-icon"
+                                />
+                            </div>
+                            <div class="hero__input">
+                                <input
+                                    type="text"
+                                    placeholder="Hi, what the process?"
+                                    class="input"
+                                />
+                                <div class="hero__choose">
+                                    <img
+                                        src="../img/icon-file.png"
+                                        alt=""
+                                        class="choose-icon"
+                                    />
+                                    <img
+                                        src="../img/icon-img.png"
+                                        alt=""
+                                        class="choose-icon"
+                                    />
+                                    <figure>
+                                        <img
+                                            src="../img/icon-fly.png"
+                                            alt=""
+                                            class="choose-icon"
+                                        />
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- main -->
+        <main>
+            <!-- email -->
+            <div class="email">
+                <div class="container">
+                    <div class="email__inner">
+                        <div class="email__media">
+                            <div class="email__table">
+                                <img
+                                    src="../img/table-decor.png"
+                                    alt=""
+                                    class="email__table-img"
+                                />
+                                <div class="email__decor">
+                                    <img
+                                        src="../img/email-decor-01.png"
+                                        alt=""
+                                        class="dercor-img"
+                                    />
+                                    <img
+                                        src="../img/email-decor-02.png"
+                                        alt=""
+                                        class="dercor-img"
+                                    />
+                                    <img
+                                        src="../img/email-decor-03.png"
+                                        alt=""
+                                        class="dercor-img"
+                                    />
+                                    <img
+                                        src="../img/email-decor-04.png"
+                                        alt=""
+                                        class="dercor-img"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="email__content">
+                            <p
+                                class="section__sub-heading .section__sub-headingmobile"
+                            >
+                                email capture
+                            </p>
+                            <h2
+                                class="section__heading email__heading section__heading-mobile"
+                            >
+                                Multiple popups for multiple goals
+                            </h2>
+                            <p class="section__desc email__desc">
+                                From email capture to reducing cart abandonment,
+                                create multiple.
+                            </p>
+                            <br />
+                            <p class="section__desc email__desc">
+                                From email capture to reducing cart abandonment,
+                                create multiple, personalized popups for
+                                different groups of visitors. From email capture
+                                to reducing cart abandonment, create multiple,
+                                personalized popups for different groups of
+                                visitors.
+                            </p>
+                            <a href="#!" class="btn email__btn"
+                                >Start your free trial</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- sub -->
+            <div class="sub">
+                <div class="layer">
+                    <p class="section__sub-heading section__sub-headingmobile">
+                        RETURNING SUBSCRIBERS
+                    </p>
+                    <h2 class="section__heading section__heading-mobile">
+                        Turn new visitors into subscribers
+                    </h2>
+                    <div class="sub__list">
+                        <div class="sub__item">
+                            <figure>
+                                <img
+                                    src="../img/sub-img.png"
+                                    alt=""
+                                    class="sub__icon"
+                                />
+                            </figure>
+                            <div class="sub__content">
+                                <h4 class="sub__title">Collect more email</h4>
+                                <p class="sub__desc section__desc">
+                                    Grow a segmented email list with quality
+                                    subscribers.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="sub__item">
+                            <figure>
+                                <img
+                                    src="../img/sub-img-02.png"
+                                    alt=""
+                                    class="sub__icon"
+                                />
+                            </figure>
+                            <div class="sub__content">
+                                <h4 class="sub__title">Increase your sales</h4>
+                                <p class="sub__desc section__desc">
+                                    Sell more to your website visitors and make
+                                    the most of your traffic.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="sub__item">
+                            <figure>
+                                <img
+                                    src="../img/sub-img-03.png"
+                                    alt=""
+                                    class="sub__icon"
+                                />
+                            </figure>
+                            <div class="sub__content">
+                                <h4 class="sub__title">
+                                    Get in touch with visitors
+                                </h4>
+                                <p class="sub__desc section__desc">
+                                    Send each visitor to the products or pages
+                                    they should see.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="sub__item">
+                            <figure>
+                                <img
+                                    src="../img/sub-img-04.png"
+                                    alt=""
+                                    class="sub__icon"
+                                />
+                            </figure>
+                            <div class="sub__content">
+                                <h4 class="sub__title">
+                                    Guide visitors around
+                                </h4>
+                                <p class="sub__desc section__desc">
+                                    Invite visitors to contact you for support,
+                                    feedback, or a sales call.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- visitor -->
+            <div class="visitor">
+                <div class="layer">
+                    <p class="section__sub-heading section__sub-headingmobile">
+                        Meet each visitor
+                    </p>
+                    <h2 class="section__heading section__heading-mobile">
+                        Help subscribers make their first buy
+                    </h2>
+                    <div class="visitor__content">
+                        <div class="visitor__left">
+                            <div class="visitor__left-item">
+                                <figure>
+                                    <img
+                                        src="../img/visitor-left-01.png"
+                                        alt=""
+                                        class="visitor__left-icon"
+                                    />
+                                </figure>
+                                <p class="visitor__left-title">Page visits</p>
+                                <p class="visitor__qt">1228</p>
+                                <p class="visitor__left-desc">
+                                    67% from the last email sent
+                                </p>
+                            </div>
+                            <div class="visitor__left-item">
+                                <figure>
+                                    <img
+                                        src="../img/visitor-left-02.png"
+                                        alt=""
+                                        class="visitor__left-icon"
+                                    />
+                                </figure>
+                                <p class="visitor__left-title">Email sent</p>
+                                <p class="visitor__qt">1397</p>
+                                <p class="visitor__left-desc">
+                                    67% from the last email sent
+                                </p>
+                            </div>
+                            <div class="visitor__left-item">
+                                <figure>
+                                    <img
+                                        src="../img/visitor-left-03.png"
+                                        alt=""
+                                        class="visitor__left-icon"
+                                    />
+                                </figure>
+                                <p class="visitor__left-title title__large">
+                                    Product bought
+                                </p>
+                                <p class="visitor__qt qt__large">631</p>
+                                <p class="visitor__left-desc desc__large">
+                                    17% from the last email sent
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="visitor__right">
+                            <div class="visitor__right-item">
+                                <figure>
+                                    <img
+                                        src="../img/visitor-right-01.png"
+                                        alt=""
+                                        class="visitor__right-icon"
+                                    />
+                                </figure>
+                                <div class="visitor__right-content">
+                                    <p class="visitor__right-title">
+                                        Applicant status
+                                    </p>
+                                    <p class="visitor__rightdesc">Applying</p>
+                                </div>
+                                <img
+                                    src="../img/three-dot.png"
+                                    alt=""
+                                    class="three__dot"
+                                />
+                            </div>
+                            <div class="visitor__right-item">
+                                <figure>
+                                    <img
+                                        src="../img/visitor-right-02.png"
+                                        alt=""
+                                        class="visitor__right-icon"
+                                    />
+                                </figure>
+                                <div class="visitor__right-content">
+                                    <p class="visitor__right-title">
+                                        Opened email
+                                    </p>
+                                    <p class="visitor__rightdesc">
+                                        Xmas Newsletter
+                                    </p>
+                                </div>
+                                <img
+                                    src="../img/three-dot.png"
+                                    alt=""
+                                    class="three__dot"
+                                />
+                            </div>
+                            <div class="visitor__right-item">
+                                <figure>
+                                    <img
+                                        src="../img/visitor-right-03.png"
+                                        alt=""
+                                        class="visitor__right-icon"
+                                    />
+                                </figure>
+                                <div class="visitor__right-content">
+                                    <p class="visitor__right-title">
+                                        Follow up
+                                    </p>
+                                    <p class="visitor__rightdesc">
+                                        Follow status
+                                    </p>
+                                </div>
+                                <img
+                                    src="../img/three-dot.png"
+                                    alt=""
+                                    class="three__dot"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- popup -->
+            <div class="popup">
+                <div class="layer">
+                    <p class="section__sub-heading section__sub-headingmobile">
+                        STUNNING POPUPS
+                    </p>
+                    <h2
+                        class="section__heading section__heading-mobile popup__heading"
+                    >
+                        Sell more to your existing customers
+                    </h2>
+                    <div class="popup__content">
+                        <div class="popup__item">
+                            <figure>
+                                <img
+                                    src="../img/popup-icon-01.png"
+                                    alt=""
+                                    class="popup__icon"
+                                />
+                            </figure>
+                            <p class="popup__qt">10K+</p>
+                            <p class="popup__desc">Drag-and- drop</p>
+                        </div>
+                        <div class="popup__item">
+                            <figure>
+                                <img
+                                    src="../img/popup-icon-02.png"
+                                    alt=""
+                                    class="popup__icon"
+                                />
+                            </figure>
+                            <p class="popup__qt">75+</p>
+                            <p class="popup__desc">popup templates</p>
+                        </div>
+                        <div class="popup__item">
+                            <figure>
+                                <img
+                                    src="../img/popup-icon-03.png"
+                                    alt=""
+                                    class="popup__icon"
+                                />
+                            </figure>
+                            <p class="popup__qt">120+</p>
+                            <p class="popup__desc">Customize elements</p>
+                        </div>
+                        <div class="popup__item">
+                            <figure>
+                                <img
+                                    src="../img/popup-icon-04.png"
+                                    alt=""
+                                    class="popup__icon"
+                                />
+                            </figure>
+                            <p class="popup__qt">312+</p>
+                            <p class="popup__desc">Edit mobile separately</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- process -->
+            <div class="process">
+                <div class="layer">
+                    <p class="section__sub-heading section__sub-headingmobile">
+                        WORK PROCESS
+                    </p>
+                    <h2
+                        class="section__heading process__heading section__heading-mobile"
+                    >
+                        The most user-friendly popup builder ever made
+                    </h2>
+                    <div class="process__content">
+                        <div class="process__item">
+                            <figure>
+                                <img
+                                    src="../img/process-icon.png"
+                                    alt=""
+                                    class="process__icon"
+                                />
+                            </figure>
+                            <h4 class="process__title">Design</h4>
+                            <p class="section__desc">
+                                Drag, drop, add, and remove. Customize your
+                                popups as little or as much as you need.
+                            </p>
+                        </div>
+                        <div class="process__item">
+                            <figure>
+                                <img
+                                    src="../img/process-icon-2.png"
+                                    alt=""
+                                    class="process__icon"
+                                />
+                            </figure>
+                            <h4 class="process__title">Target</h4>
+                            <p class="section__desc">
+                                Set up advanced targeting options with one click
+                                and show your popups.
+                            </p>
+                        </div>
+                        <div class="process__item">
+                            <figure>
+                                <img
+                                    src="../img/process-icon-3.png"
+                                    alt=""
+                                    class="process__icon"
+                                />
+                            </figure>
+                            <h4 class="process__title">Understand</h4>
+                            <p class="section__desc">
+                                Make informed decisions based on how your
+                                visitors interact with your popups.
+                            </p>
+                        </div>
+                        <div class="process__item">
+                            <figure>
+                                <img
+                                    src="../img/process-icon-4.png"
+                                    alt=""
+                                    class="process__icon"
+                                />
+                            </figure>
+                            <h4 class="process__title">Design</h4>
+                            <p class="section__desc">
+                                Drag, drop, add, and remove. Customize your
+                                popups as little or as much as you need.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- teamwork -->
+            <div class="teamwork">
+                <div class="layer">
+                    <div class="teamwork__inner">
+                        <div class="teamwork__media">
+                            <img
+                                src="../img/teamwork-01.png"
+                                alt=""
+                                class="teamwork__media-img"
+                            />
+                            <img
+                                src="../img/teamwork-02.png"
+                                alt=""
+                                class="teamwork__media-img"
+                            />
+                        </div>
+                        <div class="teamwork__content">
+                            <p
+                                class="section__sub-heading section__sub-headingmobile"
+                            >
+                                TEAMWORK
+                            </p>
+                            <h2
+                                class="section__heading section__heading-mobile teamwork__heading"
+                            >
+                                Design stunning popups (without a designer)
+                            </h2>
+                            <p class="section__desc teamwork__desc">
+                                Drag, drop, add, and remove. Customize your
+                                popups as little or as much as you need. Create
+                                slide-ins and forms that match the look and feel
+                                of your site (even if you’re not a designer.).
+                                Drag, drop, add, and remove. Customize your
+                                popups as little or as much as you need.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="layer">
+                <p class="footer__text">Standards & Technology Trusted By:</p>
+                <div class="footer__logo-list">
+                    <img
+                        src="../img/footer-logo-01.png"
+                        alt=""
+                        class="footer__logo-img"
+                    />
+                    <img
+                        src="../img/footer-logo-02.png"
+                        alt=""
+                        class="footer__logo-img"
+                    />
+                    <img
+                        src="../img/footer-logo-03.png"
+                        alt=""
+                        class="footer__logo-img"
+                    />
+                    <img
+                        src="../img/footer-logo-04.png"
+                        alt=""
+                        class="footer__logo-img"
+                    />
+                    <img
+                        src="../img/footer-logo-05.png"
+                        alt=""
+                        class="footer__logo-img"
+                    />
+                </div>
+                <div class="footer__block">
+                    <div class="footer__content">
+                        <h2 class="footer__title">
+                            Should we design your first popup?
+                        </h2>
+                        <p class="section__desc footer__desc">
+                            Pick a template, customize as you need, and
+                            integrate with your other marketing tools.
+                        </p>
+                        <a href="#!" class="btn">Start your free trial</a>
+                    </div>
+                    <div class="footer__media">
+                        <img
+                            src="../img/footer-img.png"
+                            alt="footer"
+                            class="footer__img"
+                        />
+                    </div>
+                    <img
+                        src="../img/footer-decor.png"
+                        alt=""
+                        class="footer__decor"
+                    />
+                </div>
+            </div>
+            <div class="container">
+                <div class="footer__bottom">
+                    <img src="../img/logo.png" alt="" class="logo" />
+                    <nav class="header__nav">
+                        <li class="header__item">
+                            <a href="#!" class="header__item-link">Products</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#!" class="header__item-link">Pricing</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#!" class="header__item-link">Company</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#!" class="header__item-link">Blog</a>
+                        </li>
+                    </nav>
+                    <p class="copy__right">© 2022 UIHUT | All Right Reserved</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Task</title>
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <!-- css -->
+        <link rel="stylesheet" href="./build/tailwind.css" />
+    </head>
+    <body>
+        <!-- npx tailwindcss -i css/tailwind.css -o build/tailwind.css --watch -->
+        <header class="mt-10">
+            <div
+                class="layer flex items-center md:justify-between small:justify-around sm:px-6"
+            >
+                <img src="./img/logo.png" alt="logo" />
+                <nav class="md:flex items-center gap-9 list-none small:hidden">
+                    <li class="nav__item"><a href="" class="">Home</a></li>
+                    <li class="nav__item"><a href="" class="">Products</a></li>
+                    <li class="nav__item"><a href="" class="">Guidlines</a></li>
+                    <li class="nav__item"><a href="" class="">Review</a></li>
+                </nav>
+                <button class="min-w-[110px] h-10 shadow-none">
+                    <span class="">Sign in</span>
+                </button>
+                <img src="./img/list-nav.png" alt="list" class="md:hidden" />
+            </div>
+        </header>
+    </body>
+</html>
