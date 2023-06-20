@@ -140,6 +140,45 @@ button:hover span {
     z-index: -1;
     border: 1px dashed #ffffff;
 }
+.bg-gradient {
+    background: linear-gradient(
+        191.94deg,
+        #c4f566 -43.72%,
+        #ae8ef9 -5.87%,
+        #ef8f00 52.36%,
+        #61e559 122.78%
+    );
+}
+.gradient-ef8 {
+    background: linear-gradient(89.86deg, #ef8f00 -6.27%, #ff7667 90.08%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.gradient-c4f {
+    background: linear-gradient(92.64deg, #c4f566 -11.2%, #ff6e6e 123.12%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.gradient-occ {
+    background: linear-gradient(89.93deg, #0cce84 3.45%, #ae8ef9 99.07%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.border-image {
+    border: 1px solid transparent;
+    object-fit: cover;
+    background: linear-gradient(to right, #c531f9, #dd406f, #787878) border-box;
+}
+.line__dashed {
+    border: 1px dashed #708599;
+    width: 190px;
+}
 
 .hero__decor-heading {
     position: absolute;
